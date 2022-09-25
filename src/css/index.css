@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Tilda";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Tilda-Grande.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Hagerman";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Hagerman_Font.ttf") format("truetype");
+}
