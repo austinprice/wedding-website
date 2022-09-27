@@ -6,7 +6,7 @@
   font-family: "Bebas Neue";
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
+  font-display: block;
   src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
 }
 
@@ -14,7 +14,7 @@
   font-family: "Tilda";
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
+  font-display: block;
   src: url("../fonts/Tilda-Grande.otf") format("opentype");
 }
 
@@ -22,6 +22,6 @@
   font-family: "Hagerman";
   font-style: normal;
   font-weight: 500;
-  font-display: swap;
+  font-display: block;
   src: url("../fonts/Hagerman_Font.ttf") format("truetype");
 }
