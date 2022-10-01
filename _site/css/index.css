@@ -529,17 +529,14 @@ video {
 .-ml-12 {
   margin-left: -3rem;
 }
-.ml-4 {
-  margin-left: 1rem;
+.ml-3 {
+  margin-left: 0.75rem;
 }
 .mt-4 {
   margin-top: 1rem;
 }
 .mr-4 {
   margin-right: 1rem;
-}
-.-ml-10 {
-  margin-left: -2.5rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
@@ -549,15 +546,6 @@ video {
 }
 .-mt-2 {
   margin-top: -0.5rem;
-}
-.-ml-9 {
-  margin-left: -2.25rem;
-}
-.-ml-8 {
-  margin-left: -2rem;
-}
-.ml-3 {
-  margin-left: 0.75rem;
 }
 .block {
   display: block;
@@ -574,6 +562,9 @@ video {
 .hidden {
   display: none;
 }
+.w-8 {
+  width: 2rem;
+}
 .w-6 {
   width: 1.5rem;
 }
@@ -582,12 +573,6 @@ video {
 }
 .w-full {
   width: 100%;
-}
-.w-8 {
-  width: 2rem;
-}
-.w-4 {
-  width: 1rem;
 }
 .max-w-5xl {
   max-width: 64rem;
@@ -649,10 +634,6 @@ video {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
 .pt-8 {
   padding-top: 2rem;
 }
@@ -667,9 +648,6 @@ video {
 }
 .pl-3 {
   padding-left: 0.75rem;
-}
-.pl-16 {
-  padding-left: 4rem;
 }
 .text-center {
   text-align: center;
@@ -715,12 +693,6 @@ video {
 .leading-tight {
   line-height: 1.25;
 }
-.leading-snug {
-  line-height: 1.375;
-}
-.leading-none {
-  line-height: 1;
-}
 .tracking-widest {
   letter-spacing: 0.1em;
 }
@@ -737,9 +709,6 @@ video {
 }
 .underline {
   text-decoration-line: underline;
-}
-.underline-offset-2 {
-  text-underline-offset: 2px;
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
@@ -771,11 +740,6 @@ video {
   font-weight: 500;
   font-display: block;
   src: url("../fonts/Hagerman_Font.ttf") format("truetype");
-}
-
-.hover\:bg-gray-500:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-green:hover {
