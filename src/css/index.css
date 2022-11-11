@@ -25,3 +25,16 @@
   font-display: block;
   src: url("../fonts/Hagerman_Font.ttf") format("truetype");
 }
+
+a {
+  @apply underline-offset-4 transition ease-out;
+  text-decoration: underline;
+}
+
+a:hover {
+  @apply bg-green bg-opacity-10;
+}
+
+p {
+  @apply font-serif leading-relaxed pr-12;
+}
