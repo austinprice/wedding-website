@@ -17,6 +17,7 @@ module.exports = {
         'display': ['Bebas Neue', 'Arial', 'sans-serif'],
         'script': ['Tilda', 'sans-serif'],
         'hagerman': ['Hagerman', 'Arial', 'sans-serif'],
+        'serif': ['Merriweather', 'serif']
       }
     },
   },

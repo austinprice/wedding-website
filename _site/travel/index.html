@@ -27,37 +27,104 @@
 </head>
 
   <body class="font-display text-green">
-    <header class="container relative flex items-center justify-between py-4">
-        <a href="/" class="hover:bg-transparent"><img src="/img/flag.svg" class="inline-block w-24"></a>
-        <nav>
-          <ul class="grid gap-2 grid-flow-col">
+    <button id="menu-btn" class="sm:invisible fixed right-4 bottom-4 px-6 py-3 text-white text-lg tracking-widest bg-green">
+  Menu
+</button>
+
+<nav id="mobile-menu" class="hidden sm:invisible bg-tan-light fixed h-full w-full left-0 top-0 z-10 p-8">
+  <ul class="grid gap-6 grid-flow-row text-2xl">
+    <li>
+      <a href="/" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:decoration-green decoration-1 duration-500">
+        Details
+      </a>
+    </li>
+    <li>
+      <a href="/travel" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Travel
+      </a>
+    </li>
+    <li>
+      <a href="/activities" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Activities
+      </a>
+    </li>
+    <li>
+      <a href="https://www.zola.com/registry/catherineandaustin2023" target="_blank" class="inline-block text-center px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Registry
+        <img src="/img/arrow-up.svg" class="inline-block ml-2 w-4">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.zola.com/wedding/catherineandaustin2023/rsvp" target="_blank" class="inline-block text-center px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        RSVP
+        <img src="/img/arrow-up.svg" class="inline-block ml-2 w-4">
+      </a>
+    </li>
+  </ul>
+  <button id="close-btn" class="sm:invisible fixed right-4 z-20 bottom-4 px-6 py-3 text-white text-lg tracking-widest bg-green">
+    Close
+  </button>
+</nav>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn');
+  const closeBtn = document.querySelector('#close-btn');
+  const menu = document.querySelector('#mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.remove('hidden');
+  });
+  closeBtn.addEventListener('click', () => {
+    menu.classList.add('hidden');
+  });
+</script>
+    <header class="container mx-auto relative block items-center py-4">
+
+        <nav class="flex justify-center sm:justify-between items-center w-full">
+          <a href="/" class="hover:bg-transparent inline-block"><img src="/img/flag.svg" class="inline-block w-24"></a>
+          <ul class="inline-grid gap-2 grid-flow-col hidden sm:inline-grid">
             <li>
-              <a href="/" class="inline-block px-6 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
-              tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+              <a href="/" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+              tracking-wider hover:decoration-green decoration-1 duration-500">
                 Details
               </a>
             </li>
             <li>
-              <a href="/travel" class="inline-block px-6 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+              <a href="/travel" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
               tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
                 Travel
               </a>
-            </li><li>
-              <a href="/activities" class="inline-block px-6 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+            </li>
+            <li>
+              <a href="/activities" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
               tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
                 Activities
               </a>
-            </li><li>
-              <a href="/" class="inline-block px-6 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+            </li>
+            <li>
+              <a href="https://www.zola.com/registry/catherineandaustin2023" target="_blank" class="inline-block px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+              tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+                Registry
+                <img src="/img/arrow-up.svg" class="inline-block ml-2">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.zola.com/wedding/catherineandaustin2023/rsvp" target="_blank" class="inline-block px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
               tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
                 RSVP
+                <img src="/img/arrow-up.svg" class="inline-block ml-2">
               </a>
             </li>
           </ul>
         </nav>
     </header>
     <div class="md:pt-12 md:pb-20 pt-8 pb-12 text-center">
-      <h1 class="md:text-8xl text-5xl text-center tracking-widest font-hagerman">Travel</h1>
+      <h1 class="md:text-8xl text-6xl text-center tracking-widest font-hagerman">Travel</h1>
       <h3 class="font-script md:text-5xl text-4xl leading-3">enjoy your stay</h3>
     </div>
 

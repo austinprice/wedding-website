@@ -30,80 +30,162 @@
 
     <div class="content">
 <div class="container mx-auto">
-    <div class="my-8 text-center block">
-        <img src="/img/flag.svg" class="inline-block">
+  <header>
+    <div class="my-4 sm:my-6 text-center block">
+      <img src="/img/flag.svg" class="inline-block w-24 sm:w-28">
+    </div>
+    <button id="menu-btn" class="sm:invisible fixed right-4 bottom-4 px-6 py-3 text-white text-lg tracking-widest bg-green">
+  Menu
+</button>
 
+<nav id="mobile-menu" class="hidden sm:invisible bg-tan-light fixed h-full w-full left-0 top-0 z-10 p-8">
+  <ul class="grid gap-6 grid-flow-row text-2xl">
+    <li>
+      <a href="/" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:decoration-green decoration-1 duration-500">
+        Details
+      </a>
+    </li>
+    <li>
+      <a href="/travel" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Travel
+      </a>
+    </li>
+    <li>
+      <a href="/activities" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Activities
+      </a>
+    </li>
+    <li>
+      <a href="https://www.zola.com/registry/catherineandaustin2023" target="_blank" class="inline-block text-center px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Registry
+        <img src="/img/arrow-up.svg" class="inline-block ml-2 w-4">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.zola.com/wedding/catherineandaustin2023/rsvp" target="_blank" class="inline-block text-center px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        RSVP
+        <img src="/img/arrow-up.svg" class="inline-block ml-2 w-4">
+      </a>
+    </li>
+  </ul>
+  <button id="close-btn" class="sm:invisible fixed right-4 z-20 bottom-4 px-6 py-3 text-white text-lg tracking-widest bg-green">
+    Close
+  </button>
+</nav>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn');
+  const closeBtn = document.querySelector('#close-btn');
+  const menu = document.querySelector('#mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.remove('hidden');
+  });
+  closeBtn.addEventListener('click', () => {
+    menu.classList.add('hidden');
+  });
+</script>
+  </header>
+  <div class="md:pt-10 md:pb-24 pt-8 pb-16 text-center">
+    <h1 class="md:text-8xl text-7xl text-center tracking-widest font-hagerman">Cat <span class="align-text-top font-script inline-block pb-1 border-b border-green md:text-6xl text-5xl tracking-normal mt-2">and</span> Austin</h1>
+    <div class="py-4 tracking-widest">
+      <h3 class="inline-block md:text-3xl text-2xl">May 20, 2023</h3>
+      <img src="/img/tree.svg" class="align-middle -mt-3 mx-4 inline-block">
+      <h3 class="inline-block md:text-3xl text-2xl">Lake Rabun</h3>
     </div>
-    <div class="md:pt-12 md:pb-28 pt-8 pb-16 text-center">
-        <h1 class="md:text-8xl text-7xl text-center tracking-widest">Cat <span class="align-text-top font-script inline-block pb-1 border-b border-green md:text-6xl text-5xl tracking-normal mt-2">and</span> Austin</h1>
-        <div class="py-4 tracking-widest">
-        <h3 class="inline-block md:text-3xl text-2xl">May 20, 2023</h3>
-        <img src="/img/tree.svg" class="align-middle -mt-3 mx-4 inline-block">
-        <h3 class="inline-block md:text-3xl text-2xl">Lake Rabun</h3>
-        </div>
-        <nav class="mx-auto inline-block mt-2 md:mt-8">
-            <ul class="flex space-around">
-              <li>
-                <a href="/travel" class="mx-2 inline-block px-8 py-3 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
-                tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
-                  Travel
-                </a>
-              </li>
-              <li>
-                <a href="/activities" class="mx-2 inline-block px-8 py-3 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
-                tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
-                  Activities
-                </a>
-              </li>
-            </ul>
-          </nav>
-    </div>
+    <nav class="mx-auto inline-block mt-2 md:mt-8">
+      <ul class="flex space-around">
+        <li class="hidden sm:inline-block">
+          <a href="/travel" class="mx-2 inline-block px-7 py-3 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+          text-xl tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+            Travel
+          </a>
+        </li>
+        <li class="hidden sm:inline-block">
+          <a href="/activities" class="mx-2 inline-block px-7 py-3 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+          text-xl tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+            Activities
+          </a>
+        </li>
+        <li class="hidden sm:inline-block">
+          <a href="https://www.zola.com/registry/catherineandaustin2023" target="_blank" class="mx-2 inline-block px-7 py-3 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+          text-xl tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+            Registry
+            <img src="/img/arrow-up.svg" class="inline-block ml-2">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.zola.com/wedding/catherineandaustin2023/rsvp" target="_blank" class="mx-2 inline-block px-7 py-3 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+          text-xl tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+            RSVP
+            <img src="/img/arrow-up.svg" class="inline-block ml-2">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
 <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 max-w-5xl gap-y-12 md:gap-y-4 md:gap-x-4 mb-12 content-center">
-    <div class="col-span-2 py-4 md:pl-24 pl-20 border-l-2 border-tan-mid">
+  <div class="col-span-2 py-4 md:pl-24 pl-20 border-l-2 border-tan-mid">
     <div class="md:py-10 py-8">
-        <h2 class="font-hagerman tracking-widest text-xl">Celebrate at</h2>
-        <div class="mt-2">
-        <span class="font-script md:text-5xl text-4xl inline-block -ml-12 w-8">the</span>
-        <h3 class="font-display text-4xl tracking-widest inline-block align-middle ml-3">Lake Rabun Pavillion</h3>
-        </div>
-        <div class="mt-4">
-            <img src="img/map-pin.svg" class="align-top mt-2 mr-4 inline-block">
-            <p class="inline-block text-xl tracking-widest font-hagerman">
-                <a  href="https://www.google.com/maps/place/Lake+Rabun+Pavilion/@34.771233,-83.4376992,17z/data=!3m1!4b1!4m5!3m4!1s0x8858c8b3079fc41d:0xd764b27475aceacc!8m2!3d34.7712507!4d-83.4354983"
-                    class="underline hover:bg-green hover:bg-opacity-10 leading-tight underline-offset-4"
-                    target="_blank">
-                1757 Lake Rabun Rd <br/>Lakemont, GA 30552
-                </a>
-            </p>
-        </div>
-    </div>
-    
-    <div class="md:py-10 py-8">
-        <h2 class="font-hagerman tracking-widest text-xl">Ceremony begins</h2>
-        <div class="mt-2">
-        <span class="font-script md:text-5xl text-4xl inline-block -ml-12 w-8">at</span>
-        <h3 class="font-display text-4xl tracking-widest inline-block align-middle ml-3">5:30pm</h3>
-        <span class="font-script md:text-5xl text-4xl inline-block ml-2">or there abouts</span>
-        </div>
-        <div class="mt-4 flex flex-row content-start">
-        <div>
-            <img src="img/drinks.svg" class="shrink align-top mt-1 inline-block w-6">
-        </div>
-        <p class="flex-1 text-xl tracking-widest pl-3 font-hagerman">with dinner and dancing to follow</p>
-        </div>
+      <h2 class="font-display tracking-widest text-xl">Friday, May 19</h2>
+      <div class="mt-2">
+        <h3 class="font-hagerman text-4xl tracking-widest inline-block align-middle">Welcome Party</h3>
+        <p class="font-script text-5xl">drop in for light bites and drinks</p>
+      </div>
+      <div class="mt-6">
+          <img src="img/map-pin.svg" class="align-top mt-2 mr-4 inline-block">
+          <p class="inline-block text-lg tracking-widest font-serif">
+              <a  href="https://www.google.com/maps/place/The+Rock+House/@34.8784236,-83.4024115,17z/data=!3m1!4b1!4m5!3m4!1s0x8858dabf7d22176b:0xea89041966a6a2d!8m2!3d34.8784215!4d-83.4002229"
+                  class="underline hover:bg-green hover:bg-opacity-10 leading-tight underline-offset-4"
+                  target="_blank">
+              <span class="font-bold">The Rock House</span><br/>39 E Savannah Street<br/>Clayton, GA 30525
+              </a>
+          </p>
+      </div>
+      <div class="mt-6">
+        <img src="img/map-pin.svg" class="align-top mt-1 mr-4 inline-block">
+        <p class="inline-block text-lg tracking-widest font-serif">
+            4pm - 6pm
+        </p>
+      </div>
     </div>
 
     <div class="md:py-10 py-8">
-        <p class="font-script md:text-5xl text-4xl leading-tight">check back later for more info</p>
+      <h2 class="font-display tracking-widest text-xl">Saturday, May 20</h2>
+      <div class="mt-2">
+        <h3 class="font-hagerman text-4xl tracking-widest inline-block align-middle">Wedding Ceremony</h3>
+        <p class="font-script text-5xl">with dinner and dancing to follow <img src="/img/drinks.svg" class="shrink align-middle -mt-2 ml-2 inline-block w-6"></p>
+      </div>
+      <div class="mt-6">
+          <img src="img/map-pin.svg" class="align-top mt-2 mr-4 inline-block">
+          <p class="inline-block text-lg tracking-widest font-serif">
+              <a  href="https://www.google.com/maps/place/Lake+Rabun+Pavilion/@34.771233,-83.4376992,17z/data=!3m1!4b1!4m5!3m4!1s0x8858c8b3079fc41d:0xd764b27475aceacc!8m2!3d34.7712507!4d-83.4354983"
+                  class="underline hover:bg-green hover:bg-opacity-10 leading-tight underline-offset-4"
+                  target="_blank">
+              <span class="font-bold">Lake Rabun Pavilion</span><br/>1757 Lake Rabun Road<br/>Lakemont, GA 30552
+              </a>
+          </p>
+      </div>
+      <div class="mt-6">
+        <img src="img/map-pin.svg" class="align-top mt-1 mr-4 inline-block">
+        <p class="inline-block text-lg tracking-widest font-serif">
+            5:30pm
+        </p>
+      </div>
     </div>
-    </div>
+  </div>
 
-    <div class="col-span-1 self-center content-center md:order-last order-first">
+  <div class="col-span-1 self-center content-center md:order-last order-first">
     <img src="img/photo-strip.png" class="w-72 max-w-full hidden md:inline-block">
     <img src="img/photo-strip-wide.png" class="w-full max-w-full md:hidden inline-block">
-    </div>
+  </div>
 </div></div>
 
     <div class="container mx-auto text-center md:mt-20  py-12">
