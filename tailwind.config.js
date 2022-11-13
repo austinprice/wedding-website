@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.{html,js}"],
+  content: ["./src/*/*.{html,js}", "./src/*.{html,js}"],
   theme: {
     container: {
       padding: '2rem',
@@ -17,6 +17,7 @@ module.exports = {
         'display': ['Bebas Neue', 'Arial', 'sans-serif'],
         'script': ['Tilda', 'sans-serif'],
         'hagerman': ['Hagerman', 'Arial', 'sans-serif'],
+        'serif': ['Merriweather', 'serif']
       }
     },
   },

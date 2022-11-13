@@ -1,0 +1,218 @@
+<!doctype html>
+<html class="bg-tan-light antialiased	">
+  <head>
+  <title>Travel</title>
+  <link rel="stylesheet" href="/css/index.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Cat & Austin's Wedding">
+  <meta name="description" content="May 20, 2023 | Lake Rabun - Lakemont, GA">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://catandaustin.com/">
+  <meta property="og:title" content="Cat & Austin's Wedding">
+  <meta property="og:description" content="May 20, 2023 | Lake Rabun - Lakemont, GA">
+  <meta property="og:image" content="img/preview-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://catandaustin.com/">
+  <meta property="twitter:title" content="Cat & Austin's Wedding">
+  <meta property="twitter:description" content="May 20, 2023 | Lake Rabun - Lakemont, GA">
+  <meta property="twitter:image" content="img/preview-image.png">
+
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+</head>
+
+  <body class="font-display text-green">
+    <button id="menu-btn" class="sm:hidden fixed right-4 bottom-4 px-6 py-3 text-white text-lg tracking-widest bg-green">
+  <img src="/img/menu-alt.svg" class="inline-block mr-2 w-4">
+  Menu
+</button>
+
+<nav id="mobile-menu" class="transition-all duration-700 ease-in-out opacity-0 invisible sm:hidden bg-tan-light fixed h-full w-full left-0 top-0 z-10 p-8">
+  <ul id="menu-list" class="transition-all duration-700 ease-in-out pl-12 grid gap-7 grid-flow-row text-3xl">
+    <li>
+      <a href="/" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:decoration-green decoration-1 duration-500">
+        Details
+      </a>
+    </li>
+    <li>
+      <a href="/travel" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Travel
+      </a>
+    </li>
+    <li>
+      <a href="/activities" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Activities
+      </a>
+    </li>
+    <li>
+      <a href="https://www.zola.com/registry/catherineandaustin2023" target="_blank" class="inline-block text-center px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        Registry
+        <img src="/img/arrow-up.svg" class="inline-block ml-2 w-4">
+      </a>
+    </li>
+    <li>
+      <a href="https://www.zola.com/wedding/catherineandaustin2023/rsvp" target="_blank" class="inline-block text-center px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+      tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        RSVP
+        <img src="/img/arrow-up.svg" class="inline-block ml-2 w-4">
+      </a>
+    </li>
+  </ul>
+  <button id="close-btn" class="sm:hidden fixed right-4 z-20 bottom-4 px-6 py-3 text-white text-lg tracking-widest bg-green">
+    <img src="/img/close.svg" class="inline-block mr-2 w-4">
+    Close
+  </button>
+</nav>
+
+<script>
+  const menuBtn = document.querySelector('#menu-btn');
+  const closeBtn = document.querySelector('#close-btn');
+  const menu = document.querySelector('#mobile-menu');
+  const menuList = document.querySelector('#menu-list');
+
+  menuBtn.addEventListener('click', () => {
+    menu.classList.remove('invisible');
+    menu.classList.remove('opacity-0');
+    menu.classList.add('opacity-100');
+    menuList.classList.remove('pl-12');
+  });
+  closeBtn.addEventListener('click', () => {
+    menu.classList.add('invisible');
+    menu.classList.add('opacity-0');
+    menu.classList.remove('opacity-100');
+    menuList.classList.add('pl-12');
+  });
+</script>
+    <header class="container mx-auto relative block items-center py-4">
+
+        <nav class="flex justify-center sm:justify-between items-center w-full">
+          <a href="/" class="hover:bg-transparent inline-block"><img src="/img/flag.svg" class="inline-block w-24"></a>
+          <ul class="inline-grid gap-2 grid-flow-col hidden sm:inline-grid">
+            <li>
+              <a href="/" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+              tracking-wider hover:decoration-green decoration-1 duration-500">
+                Details
+              </a>
+            </li>
+            <li>
+              <a href="/travel" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+              tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+                Travel
+              </a>
+            </li>
+            <li>
+              <a href="/activities" class="inline-block px-4 py-2 transition ease-in-out underline decoration-transparent underline-offset-4
+              tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+                Activities
+              </a>
+            </li>
+            <li>
+              <a href="https://www.zola.com/registry/catherineandaustin2023" target="_blank" class="inline-block px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+              tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+                Registry
+                <img src="/img/arrow-up.svg" class="inline-block ml-2">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.zola.com/wedding/catherineandaustin2023/rsvp" target="_blank" class="inline-block px-4 py-2 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+              tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+                RSVP
+                <img src="/img/arrow-up.svg" class="inline-block ml-2">
+              </a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <div class="md:pt-12 md:pb-20 pt-8 pb-12 text-center">
+      <h1 class="md:text-8xl text-6xl text-center tracking-widest font-hagerman">Travel</h1>
+      <h3 class="font-script md:text-5xl text-4xl leading-3">enjoy your stay</h3>
+    </div>
+
+    <main class="content">
+<section class="container mx-auto w-full md:w-1/2">
+    <div class="px-10 md:px-0">
+        <h2 class="font-hagerman tracking-wide text-4xl sm:text-5xl mb-4">Lay of the land</h2>
+        <p class="pr-12 my-4">Festivities will be held nestled in the foothills of the Appalachian Mountains. This area is very special to Cat and her family (and now Austin, too!). Like many small mountain towns, there aren't many large hotels nearby but there are a lot of lovely Airbnb, VRBO and boutique hotel options.</p>
+        <p class="pr-12 my4">[talk about downtown Clayton, etc.]</p>
+        <p class="pr-12 my-4">We've provided a few hotel options below, as well as a Google Doc with vacation rental options. Please don't hestitate to reach out if you'd like us to help find the perfect spot for you to stay.</p>
+    </div>
+</section>
+
+<div class="container mx-auto w-full my-20">
+    <iframe width="100%" height="400" frameborder="0" title="Felt Map" src="https://felt.com/embed/map/Cat-Austins-Wedding-uujpYc2hQv9B4xxZaIaxBBC?lat=34.815807&lon=-83.406598&zoom=12"></iframe>
+</div>
+
+<section class="container mx-auto">
+    <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-y-12 md:gap-y-4 md:gap-x-20 mb-12 content-center">
+        <div class="col-span-1 px-10">
+            <h2 class="font-hagerman tracking-wide text-4xl mb-4">Parking <span class="font-script">&</span> Transportation</h2>
+            <p class="pr-12 my-4"><span class="font-bold">Parking is not available at the venue but we have arranged shuttles to help with transportation.</span></p>
+            <p>Please park at the Lakemont Fire Station, just down the street from the wedding venue. Shuttles will be available to take you to and from the venue.</p>
+            <h3 class="font-display tracking-wide text-xl mt-6">Shuttle Pickup / Dropoff Location</h3>
+            <div class="mt-2">
+                <img src="/img/map-pin.svg" class="align-top mt-1 mr-3 inline-block">
+                <p class="inline-block">
+                    <a  href="https://www.google.com/maps/place/91+Lakemont+Cir,+Lakemont,+GA+30552/@34.7904785,-83.4193038,17z/data=!3m1!4b1!4m5!3m4!1s0x8858c5f4123ab08f:0xe6a86abb2045cba7!8m2!3d34.7904785!4d-83.4171151"
+                        class="underline hover:bg-green hover:bg-opacity-10 leading-tight underline-offset-4"
+                        target="_blank">
+                        Lakemont Fire Station <br/>
+                        91 Lakemont Cir, Lakemont, GA 30552
+                    </a>
+                </p>
+            </div>
+            <h3 class="font-display tracking-wide text-xl mt-8">Shuttle Schedule</h3>
+            <p class="mt-2 italic">Keep an eye out for the finalized shuttle schedule (to be posted here) closer to the wedding day.</p>
+        </div>
+    
+        <div class="col-span-1 px-10">
+            <h2 class="font-hagerman tracking-wide text-4xl mb-4">Lodging</h2>
+            <p class="pr-12 my-4">When choosing a place to stay, somewhere around Lake Rabun, Lakemont or downtown Clayton would be best but it’s hard to go wrong!</p>
+            <div>
+                <h3 class="font-display tracking-wide text-xl">Hotels</h3>
+                <ul class="font-serif">
+                    <li class="my-2">
+                        <a href="https://thewhitebirchinn.net/" target="_blank">White Birch Inn</a>
+                    </li>
+                    <li class="my-2">
+                        <a href="https://www.choicehotels.com/georgia/clayton/quality-inn-hotels/ga474?mc=llgoxxpx" target="_blank">Quality Inn & Suites Mt. Chalet</a>
+                    </li>
+                    <li class="my-2">
+                        <a href="https://beechwoodbnb.com/" target="_blank">Beechwood Inn</a>
+                    </li>
+                    <li class="my-2">
+                        <a href="https://www.lakerabunhotel.com/" target="_blank">Lake Rabun Hotel</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-8">
+                <h3 class="font-display tracking-wide text-xl">Vacation Homes</h3>
+                <p class="my-2">We're compiling a list of vacation homes on Airbnb, VRBO and other websites. We've vetted these (including seeing many of them in person) and made sure they were all conveniently located to the festivities.</p>
+                <p><a href="https://docs.google.com/document/d/1AHlXgAqkKlBnABT7jzgdRJ8_rbBAebcw/edit" target="_blank">Check out our list</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sm:hidden py-8 text-center">
+    <a href="/activities" class="mx-2 inline-block px-7 py-3 bg-tan-mid bg-opacity-30 transition ease-in-out underline decoration-transparent underline-offset-4
+    text-xl tracking-wider hover:bg-green hover:bg-opacity-10 hover:decoration-green decoration-1 duration-500">
+        See things to do around town
+        <img src="/img/arrow-right.svg" class="inline-block ml-2">
+    </a>
+    </div>
+</section></main>
+
+    <div class="container mx-auto text-center md:mt-20  py-12">
+    <img src="/img/oars-tan.svg" class="inline-block">
+    <p class="font-script text-4xl text-tan-dark -mt-2">good times ahead</p>
+</div>
+  </body>
+</html>
